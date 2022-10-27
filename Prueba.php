@@ -261,65 +261,6 @@ var IconoParqueAtracciones = L.icon({
   popupAnchor: [0, -40]
 });
 
-/*
-let locationData = 
-[{Coordenadas: ["<?php echo $latitude[0] ?>", "<?php echo $longitude[0] ?>"], Nombre : "<?php echo $description_place[0] ?>", Icono: "<?php echo $icon_category[0] ?>"},
-
-{Coordenadas : ["<?php echo $latitude[1] ?>", "<?php echo $longitude[1] ?>"], Nombre : "<?php echo $description_place[1] ?>", Icono: "<?php echo $icon_category[0] ?>"},
-
-{Coordenadas : ["<?php echo $latitude[2] ?>", "<?php echo $longitude[2] ?>"], Nombre : "<?php echo $description_place[2] ?>", Icono: "<?php echo $icon_category[0] ?>"},
-
-{Coordenadas : ["<?php echo $latitude[3] ?>", "<?php echo $longitude[3] ?>"], Nombre : "<?php echo $description_place[3] ?>", Icono: "<?php echo $icon_category[0] ?>"},
-
-{Coordenadas : ["<?php echo $latitude[4] ?>", "<?php echo $longitude[4] ?>"], Nombre : "<?php echo $description_place[4] ?>", Icono: "<?php echo $icon_category[10] ?>"},
-
-{Coordenadas : ["<?php echo $latitude[5] ?>", "<?php echo $longitude[5] ?>"], Nombre : "<?php echo $description_place[5] ?>", Icono: "<?php echo $icon_category[2] ?>"},
-
-{Coordenadas : ["<?php echo $latitude[6] ?>", "<?php echo $longitude[6] ?>"], Nombre : "<?php echo $description_place[6] ?>", Icono: "<?php echo $icon_category[0] ?>"},
-
-{Coordenadas : ["<?php echo $latitude[7] ?>", "<?php echo $longitude[7] ?>"], Nombre : "<?php echo $description_place[7] ?>", Icono: "<?php echo $icon_category[12] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[8] ?>", "<?php echo $longitude[8] ?>"], Nombre : "<?php echo $description_place[8] ?>", Icono: "<?php echo $icon_category[2] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[9] ?>", "<?php echo $longitude[9] ?>"], Nombre : "<?php echo $description_place[9] ?>", Icono: "<?php echo $icon_category[0] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[10] ?>", "<?php echo $longitude[10] ?>"], Nombre : "<?php echo $description_place[10] ?>", Icono: "<?php echo $icon_category[0] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[11] ?>", "<?php echo $longitude[11] ?>"], Nombre : "<?php echo $description_place[11] ?>", Icono: "<?php echo $icon_category[0] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[12] ?>", "<?php echo $longitude[12] ?>"], Nombre : "<?php echo $description_place[12] ?>", Icono: "<?php echo $icon_category[2] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[13] ?>", "<?php echo $longitude[13] ?>"], Nombre : "<?php echo $description_place[13] ?>", Icono: "<?php echo $icon_category[11] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[14] ?>", "<?php echo $longitude[14] ?>"], Nombre : "<?php echo $description_place[14] ?>", Icono: "<?php echo $icon_category[2] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[15] ?>", "<?php echo $longitude[15] ?>"], Nombre : "<?php echo $description_place[15] ?>", Icono: "<?php echo $icon_category[3] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[16] ?>", "<?php echo $longitude[16] ?>"], Nombre : "<?php echo $description_place[16] ?>", Icono: "<?php echo $icon_category[4] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[17] ?>", "<?php echo $longitude[17] ?>"], Nombre : "<?php echo $description_place[17] ?>", Icono: "<?php echo $icon_category[3] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[18] ?>", "<?php echo $longitude[18] ?>"], Nombre : "<?php echo $description_place[18] ?>", Icono: "<?php echo $icon_category[5] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[19] ?>", "<?php echo $longitude[19] ?>"], Nombre : "<?php echo $description_place[19] ?>", Icono: "<?php echo $icon_category[5] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[20] ?>", "<?php echo $longitude[20] ?>"], Nombre : "<?php echo $description_place[20] ?>", Icono: "<?php echo $icon_category[6] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[21] ?>", "<?php echo $longitude[21] ?>"], Nombre : "<?php echo $description_place[21] ?>", Icono: "<?php echo $icon_category[6] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[22] ?>", "<?php echo $longitude[22] ?>"], Nombre : "<?php echo $description_place[22] ?>", Icono: "<?php echo $icon_category[7] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[23] ?>", "<?php echo $longitude[23] ?>"], Nombre : "<?php echo $description_place[23] ?>", Icono: "<?php echo $icon_category[7] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[24] ?>", "<?php echo $longitude[24] ?>"], Nombre : "<?php echo $description_place[24] ?>", Icono: "<?php echo $icon_category[9] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[25] ?>", "<?php echo $longitude[25] ?>"], Nombre : "<?php echo $description_place[25] ?>", Icono: "<?php echo $icon_category[8] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[26] ?>", "<?php echo $longitude[26] ?>"], Nombre : "<?php echo $description_place[26] ?>", Icono: "<?php echo $icon_category[13] ?>"},
-
-{Coordenadas: ["<?php echo $latitude[27] ?>", "<?php echo $longitude[27] ?>"], Nombre : "<?php echo $description_place[27] ?>", Icono: "<?php echo $icon_category[0] ?>"},
-]
-*/
 
 var map = L.map('map').setView([40.41317, -3.68307], 15);
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -329,62 +270,224 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.control.scale().addTo(map);
 L.marker([40.39801, -3.83492], { draggable: false }).addTo(map);
 
-L.marker(["<?php echo $latitude[0] ?>", "<?php echo $longitude[0] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[1] ?>", "<?php echo $longitude[1] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[2] ?>", "<?php echo $longitude[2] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[3] ?>", "<?php echo $longitude[3] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[4] ?>", "<?php echo $longitude[4] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[5] ?>", "<?php echo $longitude[5] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[6] ?>", "<?php echo $longitude[6] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[7] ?>", "<?php echo $longitude[7] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[8] ?>", "<?php echo $longitude[8] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[9] ?>", "<?php echo $longitude[9] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[10] ?>", "<?php echo $longitude[10] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[11] ?>", "<?php echo $longitude[11] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[12] ?>", "<?php echo $longitude[12] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[13] ?>", "<?php echo $longitude[13] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[14] ?>", "<?php echo $longitude[14] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[15] ?>", "<?php echo $longitude[15] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[16] ?>", "<?php echo $longitude[16] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[17] ?>", "<?php echo $longitude[17] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[18] ?>", "<?php echo $longitude[18] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[19] ?>", "<?php echo $longitude[19] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[20] ?>", "<?php echo $longitude[20] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[21] ?>", "<?php echo $longitude[21] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[22] ?>", "<?php echo $longitude[22] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[23] ?>", "<?php echo $longitude[23] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[24] ?>", "<?php echo $longitude[24] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[25] ?>", "<?php echo $longitude[25] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[26] ?>", "<?php echo $longitude[26] ?>"], { draggable: false }).addTo(map);
-L.marker(["<?php echo $latitude[27] ?>", "<?php echo $longitude[27] ?>"], { draggable: false }).addTo(map);
 
 
+L.marker(["<?php echo $latitude[0] ?>", "<?php echo $longitude[0] ?>"], {
+  title: "Museo del prado",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoMonumento
+}).bindPopup("<?php echo $description_place[0] ?>")
+  .addTo(map);
+  
+L.marker(["<?php echo $latitude[1] ?>", "<?php echo $longitude[1] ?>"], {
+  title: "Museo Tyssen",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoMonumento
+}).bindPopup("<?php echo $description_place[1] ?>")
+  .addTo(map);
+  
+L.marker(["<?php echo $latitude[2] ?>", "<?php echo $longitude[2] ?>"], {
+  title: "Caixa Forum",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoMonumento
+}).bindPopup("<?php echo $description_place[2] ?>")
+  .addTo(map);
+  
+L.marker(["<?php echo $latitude[3] ?>", "<?php echo $longitude[3] ?>"], {
+  title: "Museo Reina Sofia",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoMonumento
+}).bindPopup("<?php echo $description_place[3] ?>")
+  .addTo(map);
+  
+L.marker(["<?php echo $latitude[4] ?>", "<?php echo $longitude[4] ?>"], {
+  title: "Teatro Real",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoCine
+}).bindPopup("<?php echo $description_place[4] ?>")
+  .addTo(map);
+ 
+L.marker(["<?php echo $latitude[5] ?>", "<?php echo $longitude[5] ?>"], {
+  title: "Jardines de Sabatinni",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoVerde
+}).bindPopup("<?php echo $description_place[5] ?>")
+  .addTo(map); 
+  
+L.marker(["<?php echo $latitude[6] ?>", "<?php echo $longitude[6] ?>"], {
+  title: "Palacio Real",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoMonumento
+}).bindPopup("<?php echo $description_place[6] ?>")
+  .addTo(map);
+  
+L.marker(["<?php echo $latitude[7] ?>", "<?php echo $longitude[7] ?>"], {
+  title: "Catedral de la Almudena",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoIglesia
+}).bindPopup("<?php echo $description_place[7] ?>")
+  .addTo(map); 
+  
+L.marker(["<?php echo $latitude[8] ?>", "<?php echo $longitude[8] ?>"], {
+  title: "Parque del Retiro",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoVerde
+}).bindPopup("<?php echo $description_place[8] ?>")
+  .addTo(map);
+  
+L.marker(["<?php echo $latitude[9] ?>", "<?php echo $longitude[9] ?>"], {
+  title: "Puerta de Alcala",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoMonumento
+}).bindPopup("<?php echo $description_place[9] ?>")
+  .addTo(map);
+  
+L.marker(["<?php echo $latitude[10] ?>", "<?php echo $longitude[10] ?>"], {
+  title: "Plaza Mayor",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoMonumento
+}).bindPopup("<?php echo $description_place[10] ?>")
+  .addTo(map);
+  
+L.marker(["<?php echo $latitude[11] ?>", "<?php echo $longitude[11] ?>"], {
+  title: "Museo Sorolla",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoMonumento
+}).bindPopup("<?php echo $description_place[11] ?>")
+  .addTo(map);  
+  
+L.marker(["<?php echo $latitude[12] ?>", "<?php echo $longitude[12] ?>"], {
+  title: "Santiago Bernabeu",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoDeportes
+}).bindPopup("<?php echo $description_place[12] ?>")
+  .addTo(map);  
+  
+L.marker(["<?php echo $latitude[13] ?>", "<?php echo $longitude[13] ?>"], {
+  title: "Las cuatro torres",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoEmpresa
+}).bindPopup("<?php echo $description_place[13] ?>")
+  .addTo(map);   
+  
+L.marker(["<?php echo $latitude[14] ?>", "<?php echo $longitude[14] ?>"], {
+  title: "Metropolitano",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoDeportes
+}).bindPopup("<?php echo $description_place[14] ?>")
+  .addTo(map);  
+  
+L.marker(["<?php echo $latitude[15] ?>", "<?php echo $longitude[15] ?>"], {
+  title: "Warnner",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoParqueAtracciones
+}).bindPopup("<?php echo $description_place[15] ?>")
+  .addTo(map);  
+  
+L.marker(["<?php echo $latitude[16] ?>", "<?php echo $longitude[16] ?>"], {
+  title: "ABC Serrano",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoWifi
+}).bindPopup("<?php echo $description_place[16] ?>")
+  .addTo(map);   
 
-/*var map = L.map('map').setView([40.39801, -3.83492], 15);
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 18
-}).addTo(map);
+L.marker(["<?php echo $latitude[17] ?>", "<?php echo $longitude[17] ?>"], {
+  title: "Parque de atracciones de Madrid",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoParqueAtracciones
+}).bindPopup("<?php echo $description_place[17] ?>")
+  .addTo(map);  
+  
+L.marker(["<?php echo $latitude[18] ?>", "<?php echo $longitude[18] ?>"], {
+  title: "Wizink Center",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoMusica
+}).bindPopup("<?php echo $description_place[18] ?>")
+  .addTo(map);    
+  
+L.marker(["<?php echo $latitude[19] ?>", "<?php echo $longitude[19] ?>"], {
+  title: "Vista alegre",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoMusica
+}).bindPopup("<?php echo $description_place[19] ?>")
+  .addTo(map); 
+ 
+L.marker(["<?php echo $latitude[20] ?>", "<?php echo $longitude[20] ?>"], {
+  title: "Ojala Bar",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoBar
+}).bindPopup("<?php echo $description_place[20] ?>")
+  .addTo(map);  
 
-L.control.scale().addTo(map);
+L.marker(["<?php echo $latitude[21] ?>", "<?php echo $longitude[21] ?>"], {
+  title: "Cherry Pecas",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoBar
+}).bindPopup("<?php echo $description_place[21] ?>")
+  .addTo(map); 
+ 
+L.marker(["<?php echo $latitude[22] ?>", "<?php echo $longitude[22] ?>"], {
+  title: "Oven",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoComida
+}).bindPopup("<?php echo $description_place[22] ?>")
+  .addTo(map);    
+  
+L.marker(["<?php echo $latitude[23] ?>", "<?php echo $longitude[23] ?>"], {
+  title: "SteackBurguer",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoComida
+}).bindPopup("<?php echo $description_place[23] ?>")
+  .addTo(map);
+  
+L.marker(["<?php echo $latitude[24] ?>", "<?php echo $longitude[24] ?>"], {
+  title: "Banco de España",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoBancos
+}).bindPopup("<?php echo $description_place[24] ?>")
+  .addTo(map);  
+  
+L.marker(["<?php echo $latitude[25] ?>", "<?php echo $longitude[25] ?>"], {
+  title: "H Gregorio",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoFarmacias
+}).bindPopup("<?php echo $description_place[25] ?>")
+  .addTo(map); 
+  
+L.marker(["<?php echo $latitude[26] ?>", "<?php echo $longitude[26] ?>"], {
+  title: "CArrefour",
+  draggable: false,
+  opacity: 0.95,
+  icon: IconoSuper
+}).bindPopup("<?php echo $description_place[26] ?>")
+  .addTo(map); 
 
-function DrawMarkers(data){
-    L.marker(data.Coordenadas, {
-      title: data.Nombre,
-      draggable: false,
-      opacity: 0.95,
-      icon: data.Icono
-    }).bindPopup("<i>" + data.Nombre + "</i>")
-      .addTo(map);
-}
-
-console.log("-------------------------------------------***");
-//console.log(locationData1);
-for(var key in locationData){
-  console.log(locationData[key]);
-  DrawMarkers(locationData[key])
-}
-console.log("-------------------------------------------***");
-*/
 	
  </script>
  <p><?php echo $image_icon[2] ?></p>
